@@ -1,0 +1,60 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background-color: #111;
+        }
+        .score-panel {
+            font-family: 'Google Sans', serif;
+            margin-bottom: 10px;
+            font-size: 20px;
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+        }
+        .game-over {
+            font-family: 'Google Sans', serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none;
+        }
+        .game-over h1 {
+            font-family: 'Google Sans', serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #ff4444;
+        }
+        .game-over button {
+            font-family: 'Google Sans', serif;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #2196F3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .game-over button:hover {
+            background-color: #1976D2;
+        }
+        .use-canvas {
+            font-family: 'Google Sans', serif;
+            font-size: 20px;
+        }

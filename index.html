@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hg飞机大战</title>
+</head>
+<body>
+    <div class="score-panel">
+        <div>分数: <span id="score">0</span></div>
+        <div>生命值: <span id="life">3</span></div>
+    </div>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <div class="game-over" id="gameOverPanel">
+        <h1>游戏结束</h1>
+        <div>最终分数: <span id="finalScore">0</span></div>
+        <button onclick="restartGame()">重新开始</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="use-canvas">
+        <div>使用canvas完成的飞机大战</div>
+    </div>
+</body>
+</html>
